@@ -4,9 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path public/sass/main.sass public/dist/main.css",
     "start": "node-sass public/sass/main.sass public/dist/main.css & node server",
-    "dev": "node server.js & node-sass -w public/sass/ -o public/dist/"
+    "dev": "nodemon --watch server.js & node-sass -w public/sass/ -o public/dist/"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +15,6 @@
     "express": "^4.16.2",
     "jquery": "^3.2.1",
     "node-sass": "^4.7.2",
-    "nodemon": "^1.12.5"
+    "nodemon": "^1.18.4"
   }
 }

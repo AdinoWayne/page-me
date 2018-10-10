@@ -9,13 +9,10 @@ server.use(express.static('public'))
 server.use(bodyParser.json())
 server.use(bodyParser.urlencoded({ extended: true }))
 
-server.get("/product", (req, res) => {
-  res.sendFile(__dirname + "/public/product.html")
-})
 server.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html")
 })
 
 server.listen(server.get('port'), (req, res) => {
-  console.log("Server is running on port %s...", server.get('port'));
+  console.log("Server is running on port http://localhost:%s", server.get('port'));
 })

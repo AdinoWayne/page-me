@@ -1,40 +1,181 @@
-.collection
-  .section-wrapper
-    padding: 40px 0px
+.nav-logo-wrap
+  a.logo img
+    width: 65px !important
+    height: 45px !important
+  .logo img
+    max-height: inherit !important
+  a.logo img
+    margin-top: 15px !important
 
-  &-list
-    padding: 20px 0px
-    display: flex
-    flex-wrap: wrap
-    flex-direction: row
-    justify-content: space-between
+.navbar-mobile .fa
+  font-size: 19px
 
-  &-item
-    max-width: 220px
-    padding-right: 20px
-    padding-top: 20px
-    // width: 220px
-    // flex: 1
+@media (max-width: 640px)
+  .nav-logo-wrap a.logo img
+    width: 0px
+    height: 0px
+    margin-top: 0px
 
-    @media screen and (max-width: $tablet)
-      max-width: 160px
+.progress-box .progress-bar, .team-slider .owl-page.active span, .service-item i
+  width: 100%
+  position: relative
+  padding: 0
 
-    &:last-child
-      padding-right: 0px
+.pricing-inner:hover
+  .pricing-icon, .pricing-title
+    width: 100%
+    position: relative
+    padding: 0
 
-    img
-      width: 100%
-      height: auto
-      // max-height: 300px
+.pricing-main
+  .pricing-icon, .pricing-title
+    width: 100%
+    position: relative
+    padding: 0
 
-    .collection-footer
-      display: flex
-      flex-direction: column
-      color: $color-text
+.service-item:hover, .team-item figcaption small
+  width: 100%
+  position: relative
+  padding: 0
 
-      .name
-        font-size: 17px
-        font-weight: 900
-      .price
-        margin-top: 5px
-        font-size: 12px
+.team-slider .owl-page
+  &.active span, span
+    width: 100%
+    position: relative
+    padding: 0
+
+.pricing-main .pricing-inner .fluid-width-video-wrapper
+  width: 100%
+  position: relative
+  padding: 0
+
+.fluid-width-video-wrapper
+  iframe, object, embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+.wpb_animate_when_almost_visible
+  opacity: 1
+
+.vc_custom_1520846580370
+  background-image: url("") !important
+
+.vc_custom_1457219050734
+  background-color: #000000 !important
+
+img
+  &.wp-smiley, &.emoji
+    display: inline !important
+    border: none !important
+    box-shadow: none !important
+    height: 1em !important
+    width: 1em !important
+    margin: 0 .07em !important
+    vertical-align: -0.1em !important
+    background: none !important
+    padding: 0 !important
+
+div
+  &.wpcf7
+    margin: 0
+    padding: 0
+  &.wpcf7-response-output
+    margin: 2em 0.5em 1em
+    padding: 0.2em 1em
+  &.wpcf7 .screen-reader-response
+    position: absolute
+    overflow: hidden
+    clip: rect(1px, 1px, 1px, 1px)
+    height: 1px
+    width: 1px
+    margin: 0
+    padding: 0
+    border: 0
+  &.wpcf7-mail-sent-ok
+    border: 2px solid #398f14
+  &.wpcf7-mail-sent-ng
+    border: 2px solid #ff0000
+  &.wpcf7-spam-blocked
+    border: 2px solid #ffa500
+  &.wpcf7-validation-errors
+    border: 2px solid #f7e700
+
+.wpcf7-form-control-wrap
+  position: relative
+
+span.wpcf7-not-valid-tip
+  color: #f00
+  font-size: 1em
+  display: block
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip
+  position: absolute
+  top: 20%
+  left: 20%
+  z-index: 100
+  border: 1px solid #ff0000
+  background: #fff
+  padding: .2em .8em
+.progress-bar
+  height: 100%
+  & .progressbar-p
+    position: absolute
+    top: 1px
+    font-size: 11px
+.text-center
+  display: flex
+  justify-content: center
+span
+  &.wpcf7-list-item
+    display: inline-block
+    margin: 0 0 0 1em
+  &.wpcf7-list-item-label
+    &::before, &::after
+      content: " "
+
+.wpcf7-display-none
+  display: none
+
+div.wpcf7
+  .ajax-loader
+    visibility: hidden
+    display: inline-block
+    background-image: url('../images/ajax-loader.gif')
+    width: 16px
+    height: 16px
+    border: none
+    padding: 0
+    margin: 0 0 0 4px
+    vertical-align: middle
+    &.is-active
+      visibility: visible
+  div.ajax-error
+    display: none
+  .placeheld
+    color: #888
+  .wpcf7-recaptcha iframe
+    margin-bottom: 0
+  input[type="file"]
+    cursor: pointer
+    &:disabled
+      cursor: default
+
+/* Section
+
+.section-title
+  margin: 0 0 30px
+  text-align: center
+  .title, .subtitle
+    max-width: 780px
+    margin-left: auto
+    margin-right: auto
+
+.section-content
+
+.section_clutch .section-content
+  max-width: 960px
+  margin-left: auto
+  margin-right: auto

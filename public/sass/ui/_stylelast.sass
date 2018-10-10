@@ -1,0 +1,108 @@
+/*
+ *Theme Name:   Canary Software
+ *Theme URI:    http://canary-software.net/
+ *Description:  A Child Theme built for exline
+ *Author:       CanarySoftware
+ *Author URI:   http://canary-software.net/
+ *Template:     exline
+ *Version:      1.0
+ *License:      GNU General Public License v2 or later
+ *License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+
+/* ----------- PUT YOUR CUSTOM CSS BELOW THIS LINE -- DO NOT EDIT ABOVE THIS LINE ---------------------------
+
+#section_about .col-sm-6.mt-xs-40
+  margin-top: 115px
+
+/* Service Item
+@media only screen and (min-width: 768px)
+  .service-item
+    height: 350px
+    margin: 15px 0
+    i
+      max-height: 95px
+      margin-bottom: 20px
+    h5
+      margin-bottom: 0
+    .service-desc
+      position: relative
+      width: 90%
+    &:hover
+      i
+      h5
+        top: -40px
+      .service-desc
+        top: -20px
+
+@media only screen and (max-width: 767px)
+  .service-item
+    margin-top: 80px
+    height: auto
+
+.service-item
+  .icon-symfony:before, .icon-magento:before, .icon-php:before, .icon-redux:before, .icon-html:before, .icon-nodejs:before
+    content: ""
+    display: inline-block
+    min-width: 75px
+    min-height: 75px
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: contain
+  .icon-symfony:before
+    background-image: url("https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png")
+  .icon-magento:before
+    background-image: url("https://www.ladybirdweb.com/wp-content/uploads/2016/03/laravel-1.png")
+  .icon-redux:before
+    background-image: url("https://cdn.iconscout.com/icon/free/png-256/redux-283024.png")
+  .icon-html:before
+    background-image: url("https://png.icons8.com/color/1600/css3.png")
+  .icon-nodejs:before
+    background-image: url("https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png")
+  .icon-php:before
+    min-width: 80px
+    background-image: url("https://png.icons8.com/office/1600/php-logo.png")
+
+.work-item .figure.effect-hover
+  &:after
+    display: block
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 1
+    background: rgba(255, 255, 255, 0.85)
+    opacity: 0
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    filter: alpha(opacity = 0)
+    -webkit-transition: -webkit-transform 0.35s, opacity 0.35s
+    -moz-transition: -moz-transform 0.35s, opacity 0.35s
+    -o-transition: -o-transform 0.35s, opacity 0.35s
+    -ms-transition: -ms-transform 0.35s, opacity 0.35s
+    transition: transform 0.35s, opacity 0.35s
+  &:hover:after
+    -webkit-transform: translateY(10px)
+    -moz-transform: translateY(10px)
+    -o-transform: translateY(10px)
+    -ms-transform: translateY(10px)
+    transform: translateY(10px)
+    opacity: 1
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    filter: alpha(opacity = 100)
+
+.figure.effect-hover
+  .figcaption
+    z-index: 2
+    opacity: 1
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    filter: alpha(opacity = 100)
+  &:hover img
+    opacity: 0.75
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)"
+    filter: alpha(opacity = 75)
+  .figcaption
+    h5
+      color: #000
+    p
+      color: #424242

@@ -1,0 +1,62 @@
+.wpcw-widget-contact ul, .wpcw-widget-social ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+.wpcw-widget-contact ul li, .wpcw-widget-social ul li.has-label
+  padding: 10px 0
+
+.wpcw-widget-contact ul li
+  &:after, &:before
+    display: none
+
+.wpcw-widget-social ul li
+  &:after, &:before
+    display: none
+
+.wpcw-widget-contact ul li div
+  display: inline
+
+.wpcw-widget-social ul li
+  &:not(.has-label)
+    display: inline-block
+    margin: 0 .75em .75em 0
+    border: none
+  &.has-label
+    a
+      display: block
+    span
+      margin-right: 0.25em
+
+form.gem-form p
+  padding: 0
+
+input.gem-invalid
+  border: 1px solid red
+
+.gem-field
+  display: block
+
+form.gem-form label
+  display: inline !important
+
+.gem-spinner
+  display: none
+  background: url(../images/spinner.gif) no-repeat
+  background-size: 20px 20px
+  width: 20px
+  height: 20px
+
+.gem-submit
+  cursor: pointer
+
+form.gem-form p.gem-error
+  background-color: #ffebe8
+  border: 1px solid #c00
+  padding: .25em .5em
+  margin: .6em 0
+  border-radius: 3px
+
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)
+  .gem-spinner
+    background-image: url(../images/spinner-2x.gif)
