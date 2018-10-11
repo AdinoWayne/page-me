@@ -369,7 +369,7 @@
   font-weight: normal;
   speak: none;
   display: inline-block;
-  text-decoration: inherit;
+  text-decoration: none;
   width: 1em;
   margin-right: .2em;
   text-align: center;
@@ -4996,8 +4996,6 @@ footer.page-footer {
   color: #777;
   font-size: 12px;
   letter-spacing: 0.5em; }
-  .copy-right a:hover {
-    text-decoration: underline; }
 
 .copy-right p {
   color: #777;
@@ -8162,8 +8160,6 @@ article.hentry .entry-wrap {
   margin-top: 10px; }
   .offer .product-info .by > a {
     color: #FF5F5F; }
-    .offer .product-info .by > a:hover {
-      text-decoration: underline; }
 
 .offer .product-info > .add-to-cart {
   color: #FF5F5F;
@@ -8328,8 +8324,6 @@ article.hentry .entry-wrap {
 
 .twitterfeed .tweet_text a {
   color: #FF5F5F; }
-  .twitterfeed .tweet_text a:hover {
-    text-decoration: underline; }
 
 .twitterfeed .tweet_list .tweet_time {
   display: block;
@@ -11105,6 +11099,9 @@ body {
 .wrapper {
   max-width: 980px;
   margin: auto; }
-  @media screen and (max-width: 769px) {
-    .wrapper {
-      padding: 0 10px; } }
+
+a {
+  text-decoration: none !important; }
+
+@media screen and (max-width: 769px) {
+  padding: 0 10px; }
