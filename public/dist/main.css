@@ -2868,6 +2868,10 @@ section {
   height: 100vh;
   width: 100%; }
 
+.full-screen1 {
+  width: 100%;
+  height: 90vh; }
+
 /*  Background slider */
 .bg-slideshow-wrapper {
   position: absolute;
@@ -6913,6 +6917,39 @@ figure.effect-hover figcaption {
   color: #00b2ca; }
   .btn-continue-reading:hover {
     color: #00b2ca; }
+
+form.gem-form p {
+  padding: 0; }
+
+input.gem-invalid {
+  border: 1px solid red; }
+
+.gem-field {
+  display: block; }
+
+form.gem-form label {
+  display: inline !important; }
+
+.gem-spinner {
+  display: none;
+  background: url(../images/spinner.gif) no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px; }
+
+.gem-submit {
+  cursor: pointer; }
+
+form.gem-form p.gem-error {
+  background-color: #ffebe8;
+  border: 1px solid #c00;
+  padding: .25em .5em;
+  margin: .6em 0;
+  border-radius: 3px; }
+
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .gem-spinner {
+    background-image: url(../images/spinner-2x.gif); } }
 
 .nav-logo-wrap a.logo img {
   width: 65px !important;
@@ -11102,6 +11139,9 @@ body {
 
 a {
   text-decoration: none !important; }
+
+.particle-ground {
+  height: 100vh; }
 
 @media screen and (max-width: 769px) {
   padding: 0 10px; }

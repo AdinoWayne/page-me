@@ -40,8 +40,8 @@
         <div class="wpb_column vc_column_container vc_col-sm-12">
             <div class="vc_column-inner ">
                 <div class="wpb_wrapper">
-                    <section id="hero" class="full-screen">
-                        <div id="particle-ground" data-background="https://wallpaper-house.com/data/out/7/wallpaper2you_146341.jpg" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target="#hero" class="parallax parallax-hero full-screen bg-dark-50 skrollable skrollable-between" style="background-image: url(https://wallpaper-house.com/data/out/7/wallpaper2you_146341.jpg); transform: translate3d(0px, -87.6652px, 0px);">
+                    <section id="hero" class="full-screen1">
+                        <div id="particle-ground" data-background="https://anhdephd.com/wp-content/uploads/2018/09/hinh-nen-4k-nguoi-nong-dan.jpg" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target="#hero" class="parallax parallax-hero full-screen bg-dark-50 skrollable skrollable-between" style="background-image: url(https://anhdephd.com/wp-content/uploads/2018/09/hinh-nen-4k-nguoi-nong-dan.jpg);background-repeat: no-repeat, repeat; transform: translate3d(0px, -87.6652px, 0px);">
                             <canvas class="pg-canvas" width="1280" height="454" style="display: block;"></canvas>
                         </div>
                         <div class="hero-content">
@@ -450,7 +450,7 @@
     
                                 <div class="figure effect-hover">
     
-                                    <img src="https://m.media-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_.jpg" class="img-responsive" alt="alt" title="title">
+                                    <img src="https://piktochart.com/wp-content/uploads/2018/03/posterpro-conference.jpg" class="img-responsive" alt="alt" title="title">
     
                                     <div class="figcaption">
                                         <h5 class="alt-font">Adino</h5>
@@ -736,4 +736,21 @@
     <a href="#top" class="scroll scroll-to-top"><i class="fa fa-angle-up"></i></a>
   </footer>
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script scr="./assets/js/main.js" type="text/javascript"></script>
+<script type="text/javascript">
+$('.focus-number').each(function () {
+    var $this = $(this);
+    jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+        duration: 1000,
+        easing: 'swing',
+        step: function () {
+        $this.text(Math.ceil(this.Counter));
+        }
+    });
+});
+</script>
 </html>
